@@ -30,7 +30,7 @@ const server = app.listen(PORT, console.log(`PORT started on ${PORT}`));
 
 const io = require("socket.io")(server, {
   pingTimeout: 300000,
-  cors: { origin: "http://localhost:3000" },
+  cors: { origin: "https://chatterbox-backend-5x94.onrender.com" },
 });
 
 io.on("connection", (socket) => {
